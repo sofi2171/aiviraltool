@@ -1,0 +1,26 @@
+Converting remaining websites 4-10 from Urdu to English:
+
+Amazon MTurk (Website 4):
+- Website URL label
+- Skills, Earnings, Time, Availability sections
+- Real/Fake Analysis
+- Pros and Cons
+- Visit button
+
+PeoplePerHour (Website 5):
+- All sections to English
+
+Guru (Website 6):
+- All sections to English
+
+Toptal (Website 7):
+- All sections to English
+
+99designs (Website 8):
+- All sections to English
+
+SimplyHired (Website 9):
+- All sections to English
+
+FlexJobs (Website 10):
+- All sections to English

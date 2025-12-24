@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AI Tools Hub</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', 'Noto Sans Arabic', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            line-height: 1.8;
+            direction: ltr;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(15, 23, 42, 0.9);
+            border-bottom: 2px solid #334155;
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            color: #60a5fa;
+            margin-bottom: 15px;
+        }
+        
+        .logo a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+        }
+        
+        /* Main Content */
+        .main-content {
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            border: 2px solid #334155;
+        }
+        
+        .last-updated {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid #3b82f6;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        
+        /* Sections */
+        .policy-section {
+            margin-bottom: 40px;
+            padding: 25px;
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 15px;
+            border-left: 4px solid #60a5fa;
+        }
+        
+        .policy-section h2 {
+            color: #60a5fa;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #334155;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .policy-section h2 i {
+            font-size: 1.5rem;
+        }
+        
+        .policy-section h3 {
+            color: #94a3b8;
+            margin: 25px 0 15px 0;
+            font-size: 1.2rem;
+        }
+        
+        .policy-section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .policy-section ul {
+            margin: 15px 0 15px 30px;
+        }
+        
+        .policy-section li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        .policy-section li:before {
+            content: "•";
+            color: #60a5fa;
+            font-weight: bold;
+            position: absolute;
+            left: -20px;
+        }
+        
+        /* Important Box */
+        .important-box {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(251, 191, 36, 0.1) 100%);
+            border: 2px solid #f59e0b;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .important-box h3 {
+            color: #f59e0b;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        /* Table for Data Collection */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(15, 23, 42, 0.8);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .data-table th {
+            background: #1e40af;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        .data-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #334155;
+        }
+        
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .data-table tr:hover {
+            background: rgba(59, 130, 246, 0.1);
+        }
+        
+        /* Cookie Table */
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(15, 23, 42, 0.8);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .cookie-table th {
+            background: #7c3aed;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        .cookie-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #334155;
+        }
+        
+        /* Third Party Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .service-card {
+            background: rgba(15, 23, 42, 0.8);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+        
+        .service-card h4 {
+            color: #60a5fa;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* Contact Box */
+        .contact-box {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(21, 128, 61, 0.1) 100%);
+            border: 2px solid #16a34a;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .contact-box h3 {
+            color: #16a34a;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .contact-info a {
+            color: #60a5fa;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .contact-info a:hover {
+            color: #3b82f6;
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 60px;
+            border-top: 2px solid #334155;
+            color: #94a3b8;
+            background: rgba(15, 23, 42, 0.9);
+        }
+        
+        .footer-links {
+            margin-top: 20px;
+        }
+        
+        .footer-links a {
+            color: #60a5fa;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 16px;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        
+        .footer-links a:hover {
+            background: #60a5fa;
+            color: white;
+            border-color: #60a5fa;
+        }
+        
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #60a5fa;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+        
+        .back-to-top:hover {
+            background: #3b82f6;
+            transform: translateY(-5px);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .main-content {
+                padding: 20px;
+            }
+            
+            .policy-section {
+                padding: 15px;
+            }
+            
+            .data-table, .cookie-table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-links {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+            
+            .footer-links a {
+                width: 200px;
+                text-align: center;
+            }
+            
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-robot"></i>
+                    AI Tools Hub
+                </a>
+            </div>
+            <h1 style="color: #e2e8f0; margin-bottom: 10px;">Privacy Policy</h1>
+            <p style="color: #94a3b8;">آپ کی رازداری ہمارے لیے اہم ہے</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Last Updated -->
+            <div class="last-updated">
+                <strong><i class="fas fa-calendar-alt"></i> آخری اپ ڈیٹ:</strong> 18 دسمبر، 2024
+                <br>
+                <strong><i class="fas fa-info-circle"></i> نوٹ:</strong> یہ Privacy Policy AI Tools Hub ویب سائٹ کے تمام صارفین پر لاگو ہوتی ہے۔
+            </div>
+
+            <!-- Introduction -->
+            <div class="policy-section">
+                <h2><i class="fas fa-shield-alt"></i> تعارف</h2>
+                <p>
+                    AI Tools Hub ("ہم"، "ہمارا"، "ہمیں") آپ کی رازداری کا احترام کرتا ہے۔ یہ Privacy Policy بیان کرتی ہے کہ ہم 
+                    <a href="index.html" style="color: #60a5fa;">aitoolshub.com</a> پر جمع کردہ معلومات کو کیسے جمع، استعمال، اور شیئر کرتے ہیں۔
+                </p>
+                <p>
+                    ہماری ویب سائٹ کا استعمال کرکے، آپ اس Privacy Policy میں بیان کردہ طریقوں کے مطابق آپ کی معلومات کے استعمال 
+                    اور جمع کرنے پر رضامند ہوتے ہیں۔
+                </p>
+            </div>
+
+            <!-- Information We Collect -->
+            <div class="policy-section">
+                <h2><i class="fas fa-database"></i> معلومات جو ہم جمع کرتے ہیں</h2>
+                
+                <h3>1. ذاتی طور پر شناخت کرنے والی معلومات</h3>
+                <p>جب آپ ہماری ویب سائٹ استعمال کرتے ہیں تو ہم درج ذیل معلومات جمع کر سکتے ہیں:</p>
+                <ul>
+                    <li>نام اور ای میل ایڈریس (جب آپ نیوز لیٹر کے لیے سبسکرائب کرتے ہیں)</li>
+                    <li>براؤزر کی قسم اور آپریٹنگ سسٹم</li>
+                    <li>آئی پی ایڈریس اور جغرافیائی مقام</li>
+                    <li>ویب سائٹ استعمال کرنے کا طریقہ اور طرز عمل</li>
+                </ul>
+
+                <h3>2. غیر ذاتی معلومات</h3>
+                <p>ہم خود کار طریقے سے درج ذیل معلومات جمع کرتے ہیں:</p>
+                <ul>
+                    <li>ڈیوائس کی معلومات (ٹائپ، ماڈل، آپریٹنگ سسٹم)</li>
+                    <li>لاگ فائلز (آئی پی ایڈریس، براؤزر ٹائپ، تاریخ اور وقت)</li>
+                    <li>کوکیز اور ٹریکنگ ٹیکنالوجیز</li>
+                </ul>
+
+                <!-- Data Collection Table -->
+                <h3>3. ڈیٹا جمع کرنے کا جدول</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ڈیٹا کی قسم</th>
+                            <th>مقصد</th>
+                            <th>قانونی بنیاد</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>براؤزر ڈیٹا</td>
+                            <td>ویب سائٹ کی کارکردگی بہتر بنانے کے لیے</td>
+                            <td>قانونی مفاد</td>
+                        </tr>
+                        <tr>
+                            <td>آئی پی ایڈریس</td>
+                            <td>سیکیورٹی اور دھوکہ دہی سے تحفظ</td>
+                            <td>قانونی مفاد</td>
+                        </tr>
+                        <tr>
+                            <td>کوکیز</td>
+                            <td>ذاتی نوعیت کا تجربہ فراہم کرنے کے لیے</td>
+                            <td>رضامندی</td>
+                        </tr>
+                        <tr>
+                            <td>استعمال کے اعداد و شمار</td>
+                            <td>تجزیہ اور بہتری کے لیے</td>
+                            <td>قانونی مفاد</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- How We Use Information -->
+            <div class="policy-section">
+                <h2><i class="fas fa-cogs"></i> ہم معلومات کیسے استعمال کرتے ہیں</h2>
+                <p>ہم جمع کردہ معلومات کو درج ذیل مقاصد کے لیے استعمال کرتے ہیں:</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h4><i class="fas fa-tachometer-alt"></i> سروسز فراہم کرنا</h4>
+                        <p>ہماری ویب سائٹ اور خدمات کو چلانے اور برقرار رکھنے کے لیے</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h4><i class="fas fa-chart-line"></i> بہتری</h4>
+                        <p>ہماری ویب سائٹ اور خدمات کو بہتر بنانے کے لیے</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h4><i class="fas fa-bullhorn"></i> مواصلات</h4>
+                        <p>آپ سے متعلقہ اپ ڈیٹس اور معلومات شیئر کرنے کے لیے</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h4><i class="fas fa-shield-alt"></i> سیکورٹی</h4>
+                        <p>دھوکہ دہی اور سائبر حملوں سے تحفظ کے لیے</p>
+                    </div>
+                </div>
+
+                <!-- Important Box -->
+                <div class="important-box">
+                    <h3><i class="fas fa-exclamation-circle"></i> اہم معلومات</h3>
+                    <p>
+                        <strong>ہم آپ کی ذاتی معلومات کبھی بھی فروخت نہیں کرتے۔</strong> 
+                        ہم صرف اس حصے میں بیان کردہ مقاصد کے لیے آپ کی معلومات استعمال کرتے ہیں، 
+                        اور ہم آپ کی اجازت کے بغیر آپ کی معلومات تیسری پارٹی کو نہیں بیچتے۔
+                    </p>
+                </div>
+            </div>
+
+            <!-- Cookies & Tracking -->
+            <div class="policy-section">
+                <h2><i class="fas fa-cookie-bite"></i> کوکیز اور ٹریکنگ ٹیکنالوجیز</h2>
+                
+                <h3>1. کوکیز کی اقسام</h3>
+                <p>ہم درج ذیل قسم کی کوکیز استعمال کرتے ہیں:</p>
+                
+                <table class="cookie-table">
+                    <thead>
+                        <tr>
+                            <th>کوکی کی قسم</th>
+                            <th>مقصد</th>
+                            <th>مدت</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ضروری کوکیز</td>
+                            <td>ویب سائٹ کے بنیادی کاموں کے لیے</td>
+                            <td>سیشن تک</td>
+                        </tr>
+                        <tr>
+                            <td>فنکشنل کوکیز</td>
+                            <td>ترجیحات کو یاد رکھنے کے لیے</td>
+                            <td>1 سال</td>
+                        </tr>
+                        <tr>
+                            <td>تجزیاتی کوکیز</td>
+                            <td>ٹریفک کا تجزیہ کرنے کے لیے</td>
+                            <td>2 سال</td>
+                        </tr>
+                        <tr>
+                            <td>ایڈورٹائزنگ کوکیز</td>
+                            <td>ذاتی نوعیت کے اشتہارات کے لیے</td>
+                            <td>1 سال</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>2. کوکیز کو کیسے کنٹرول کریں</h3>
+                <p>آپ اپنے براؤزر کی ترتیبات کے ذریعے کوکیز کو کنٹرول کر سکتے ہیں:</p>
+                <ul>
+                    <li><strong>Chrome:</strong> ترتیبات → رازداری اور سیکورٹی → کوکیز</li>
+                    <li><strong>Firefox:</strong> اختیارات → رازداری اور سیکورٹی → کوکیز</li>
+                    <li><strong>Safari:</strong> ترجیحات → رازداری → کوکیز</li>
+                    <li><strong>Edge:</strong> ترتیبات → کوکیز اور سائٹ کی اجازتیں</li>
+                </ul>
+            </div>
+
+            <!-- Third-Party Services -->
+            <div class="policy-section">
+                <h2><i class="fas fa-handshake"></i> تیسری پارٹی سروسز</h2>
+                <p>ہم آپ کا بہتر تجربہ فراہم کرنے کے لیے تیسری پارٹی سروسز استعمال کرتے ہیں:</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h4><i class="fab fa-google"></i> Google Analytics</h4>
+                        <p>ٹریفک کا تجزیہ کرنے اور ویب سائٹ کو بہتر بنانے کے لیے</p>
+                        <p><a href="https://policies.google.com/privacy" target="_blank" style="color: #60a5fa;">Google Privacy Policy</a></p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h4><i class="fas fa-ad"></i> Google AdSense</h4>
+                        <p>اشتہارات دکھانے اور monetization کے لیے</p>
+                        <p><a href="https://policies.google.com/technologies/ads" target="_blank" style="color: #60a5fa;">AdSense Policy</a></p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h4><i class="fas fa-envelope"></i> Email Marketing</h4>
+                        <p>نیوز لیٹر اور اپ ڈیٹس بھیجنے کے لیے</p>
+                        <p>ہم Mailchimp یا ConvertKit استعمال کر سکتے ہیں</p>
+                    </div>
+                </div>
+
+                <!-- Important Box for AdSense -->
+                <div class="important-box">
+                    <h3><i class="fas fa-ad"></i> Google AdSense کے لیے اہم معلومات</h3>
+                    <p>
+                        <strong>تیسری پارٹی وینڈرز:</strong> Google AdSense تیسری پارٹی وینڈرز کو صارفین کو اشتہارات دکھانے کے لیے کوکیز استعمال کرنے کی اجازت دیتا ہے۔
+                    </p>
+                    <p>
+                        <strong>Opt-out:</strong> آپ <a href="https://adssettings.google.com" target="_blank" style="color: #60a5fa;">Google Ad Settings</a> 
+                        پر جا کر ذاتی نوعیت کے اشتہارات سے opt-out کر سکتے ہیں۔
+                    </p>
+                </div>
+            </div>
+
+            <!-- Data Protection & Security -->
+            <div class="policy-section">
+                <h2><i class="fas fa-lock"></i> ڈیٹا تحفظ اور سیکورٹی</h2>
+                
+                <h3>1. سیکورٹی اقدامات</h3>
+                <p>آپ کے ڈیٹا کی حفاظت کے لیے ہم درج ذیل اقدامات کرتے ہیں:</p>
+                <ul>
+                    <li>SSL انکرپشن (HTTPS) کا استعمال</li>
+                    <li>باقاعدہ سیکورٹی آڈٹس</li>
+                    <li>ڈیٹا تک رسائی کی محدود کنٹرول</li>
+                    <li>محفوظ سرورز کا استعمال</li>
+                </ul>
+
+                <h3>2. ڈیٹا کی برقراری</h3>
+                <p>ہم آپ کا ڈیٹا درج ذیل مدت تک محفوظ رکھتے ہیں:</p>
+                <ul>
+                    <li>لاگ فائلز: 30 دن</li>
+                    <li>کوکی ڈیٹا: 2 سال</li>
+                    <li>نیوز لیٹر سبسکرپشن: جب تک آپ unsubscribe نہ کریں</li>
+                    <li>انکوائری ڈیٹا: 1 سال</li>
+                </ul>
+            </div>
+
+            <!-- Your Rights -->
+            <div class="policy-section">
+                <h2><i class="fas fa-user-shield"></i> آپ کے حقوق</h2>
+                <p>آپ کے پاس درج ذیل حقوق ہیں:</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h4><i class="fas fa-eye"></i> رسائی کا حق</h4>
+                        <p>آپ اپنی ذاتی معلومات کی کاپی طلب کر سکتے ہیں</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h4><i class="fas fa-edit"></i> درستگی کا حق</h4>
+                        <p>آپ غلط معلومات کو درست کر سکتے ہیں</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h4><i class="fas fa-trash-alt"></i> مٹانے کا حق</h4>
+                        <p>آپ اپنی معلومات کو مٹوا سکتے ہیں</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h4><i class="fas fa-ban"></i> مخالفت کا حق</h4>
+                        <p>آپ اپنی معلومات کے پروسیسنگ پر اعتراض کر سکتے ہیں</p>
+                    </div>
+                </div>
+
+                <!-- Contact Box for Rights -->
+                <div class="contact-box">
+                    <h3><i class="fas fa-envelope-open-text"></i> اپنے حقوق استعمال کرنے کے لیے</h3>
+                    <p>اپنے حقوق استعمال کرنے یا ڈیٹا کی درخواست کے لیے، براہ کرم ہم سے رابطہ کریں:</p>
+                    <div class="contact-info">
+                        <a href="mailto:privacy@aitoolshub.com">
+                            <i class="fas fa-envelope"></i> privacy@aitoolshub.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Children's Privacy -->
+            <div class="policy-section">
+                <h2><i class="fas fa-child"></i> بچوں کی رازداری</h2>
+                <p>
+                    ہماری ویب سائٹ 13 سال سے کم عمر کے بچوں کے لیے نہیں ہے۔ ہم جان بوجھ کر 13 سال سے کم عمر 
+                    بچوں سے ذاتی معلومات جمع نہیں کرتے۔ اگر آپ کو لگتا ہے کہ ہمارے پاس 13 سال سے کم عمر 
+                    بچے کی معلومات ہیں، تو براہ کرم فوری طور پر ہم سے رابطہ کریں۔
+                </p>
+            </div>
+
+            <!-- Changes to Privacy Policy -->
+            <div class="policy-section">
+                <h2><i class="fas fa-sync-alt"></i> Privacy Policy میں تبدیلیاں</h2>
+                <p>
+                    ہم کبھی کبھار اس Privacy Policy میں تبدیلیاں کر سکتے ہیں۔ ہم آپ کو تبدیلیوں کے بارے میں مطلع کریں گے:
+                </p>
+                <ul>
+                    <li>ویب سائٹ پر اپ ڈیٹ شدہ Privacy Policy پوسٹ کرکے</li>
+                    <li>نیوز لیٹر کے ذریعے (اگر آپ نے سبسکرائب کیا ہے)</li>
+                    <li>ایک prominent notice کے ذریعے</li>
+                </ul>
+                <p>
+                    تبدیلیوں کے بعد ویب سائٹ کا استعمال جاری رکھنے سے آپ اپ ڈیٹ شدہ Privacy Policy سے اتفاق کرتے ہیں۔
+                </p>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-box" style="margin-top: 40px;">
+                <h3><i class="fas fa-headset"></i> رابطہ کی معلومات</h3>
+                <p>Privacy Policy سے متعلق کوئی سوال یا تشویش ہو تو براہ کرم ہم سے رابطہ کریں:</p>
+                <div class="contact-info">
+                    <a href="mailto:privacy@aitoolshub.com">
+                        <i class="fas fa-envelope"></i> sufiangsufiang15@gmail5.com
+                    </a>
+                    <a href="contact.html">
+                        <i class="fas fa-phone-alt"></i> Contact Form
+                    </a>
+                    <p style="margin-top: 15px;">
+                        <strong>پوسٹل ایڈریس:</strong><br>
+                        AI Tools Hub Privacy Team<br>
+                        [اپنا پتہ یہاں درج کریں]
+                    </p>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2025 AI Tools Hub. تمام حقوق محفوظ ہیں۔</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #64748b;">
+                یہ Privacy Policy آخری بار 18 دسمبر، 2025کو اپ ڈیٹ کی گئی تھی۔
+            </p>
+        </footer>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Back to Top functionality
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.style.display = 'flex';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+        
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Print functionality
+        const printButton = document.createElement('button');
+        printButton.innerHTML = '<i class="fas fa-print"></i> Print Policy';
+        printButton.style.cssText = `
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+        `;
+        
+        printButton.addEventListener('mouseenter', () => {
+            printButton.style.background = '#1d4ed8';
+        });
+        
+        printButton.addEventListener('mouseleave', () => {
+            printButton.style.background = '#3b82f6';
+        });
+        
+        printButton.addEventListener('click', () => {
+            window.print();
+        });
+        
+        document.body.appendChild(printButton);
+
+        // Table row hover effect
+        document.querySelectorAll('.data-table tr, .cookie-table tr').forEach(row => {
+            row.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = 'rgba(59, 130, 246, 0.2)';
+            });
+            
+            row.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = '';
+            });
+        });
+
+        console.log("✅ Privacy Policy Page Loaded Successfully");
+        
+        // Smooth loading animation
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s';
+            
+            setTimeout(function() {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AI Tools Hub</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', 'Noto Sans Arabic', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            line-height: 1.8;
+            direction: ltr;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(15, 23, 42, 0.9);
+            border-bottom: 2px solid #334155;
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            color: #60a5fa;
+            margin-bottom: 15px;
+        }
+        
+        .logo a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+        }
+        
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Contact Form */
+        .contact-form-container {
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 20px;
+            padding: 30px;
+            border: 2px solid #334155;
+        }
+        
+        .contact-form-container h2 {
+            color: #60a5fa;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #94a3b8;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid #334155;
+            border-radius: 8px;
+            color: #e2e8f0;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: #60a5fa;
+            box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+        }
+        
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        .submit-btn:hover {
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+        }
+        
+        /* Contact Info */
+        .contact-info-container {
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 20px;
+            padding: 30px;
+            border: 2px solid #334155;
+        }
+        
+        .contact-info-container h2 {
+            color: #60a5fa;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* Contact Methods */
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 12px;
+            border-left: 4px solid #60a5fa;
+            transition: all 0.3s;
+        }
+        
+        .contact-method:hover {
+            transform: translateX(5px);
+            background: rgba(15, 23, 42, 0.8);
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(96, 165, 250, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #60a5fa;
+        }
+        
+        .contact-details h3 {
+            color: #e2e8f0;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        
+        .contact-details p, 
+        .contact-details a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-details a:hover {
+            color: #60a5fa;
+            text-decoration: underline;
+        }
+        
+        /* WhatsApp Special Styling */
+        .whatsapp-contact {
+            border-left-color: #25D366;
+        }
+        
+        .whatsapp-contact .contact-icon {
+            background: rgba(37, 211, 102, 0.1);
+            color: #25D366;
+        }
+        
+        /* Response Time Box */
+        .response-time {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(21, 128, 61, 0.1) 100%);
+            border: 2px solid #16a34a;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .response-time h3 {
+            color: #16a34a;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        /* Social Media */
+        .social-media {
+            margin-top: 40px;
+        }
+        
+        .social-media h3 {
+            color: #60a5fa;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(96, 165, 250, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e2e8f0;
+            font-size: 1.3rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-5px);
+            background: #60a5fa;
+            color: white;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            margin-top: 60px;
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 20px;
+            padding: 30px;
+            border: 2px solid #334155;
+        }
+        
+        .faq-section h2 {
+            color: #60a5fa;
+            margin-bottom: 25px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 20px;
+        }
+        
+        .faq-question {
+            color: #e2e8f0;
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 500;
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            color: #94a3b8;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 60px;
+            border-top: 2px solid #334155;
+            color: #94a3b8;
+            background: rgba(15, 23, 42, 0.9);
+        }
+        
+        .footer-links {
+            margin-top: 20px;
+        }
+        
+        .footer-links a {
+            color: #60a5fa;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 16px;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        
+        .footer-links a:hover {
+            background: #60a5fa;
+            color: white;
+            border-color: #60a5fa;
+        }
+        
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #60a5fa;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+        
+        .back-to-top:hover {
+            background: #3b82f6;
+            transform: translateY(-5px);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .contact-form-container,
+            .contact-info-container,
+            .faq-section {
+                padding: 20px;
+            }
+            
+            .footer-links {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+            
+            .footer-links a {
+                width: 200px;
+                text-align: center;
+            }
+            
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+            
+            .social-icon {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-robot"></i>
+                    AI Tools Hub
+                </a>
+            </div>
+            <h1 style="color: #e2e8f0; margin-bottom: 10px;">Contact Us</h1>
+            <p style="color: #94a3b8;">ہم سے رابطہ کریں - ہم آپ کی مدد کے لیے موجود ہیں</p>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <h2><i class="fas fa-envelope"></i> ہمیں پیغام بھیجیں</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">آپ کا نام</label>
+                        <input type="text" id="name" class="form-control" placeholder="اپنا نام درج کریں" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">ای میل ایڈریس</label>
+                        <input type="email" id="email" class="form-control" placeholder="example@gmail.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">عنوان</label>
+                        <select id="subject" class="form-control" required>
+                            <option value="">منتخب کریں</option>
+                            <option value="general">عام سوال</option>
+                            <option value="technical">ٹیکنیکل مسئلہ</option>
+                            <option value="partnership">شراکت داری</option>
+                            <option value="suggestion">تجویز</option>
+                            <option value="other">دیگر</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">پیغام</label>
+                        <textarea id="message" class="form-control" placeholder="اپنا پیغام یہاں لکھیں..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        پیغام بھیجیں
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info-container">
+                <h2><i class="fas fa-address-book"></i> رابطہ کی معلومات</h2>
+                
+                <div class="contact-methods">
+                    <!-- Email -->
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>ای میل</h3>
+                            <a href="mailto:sufangsufiang15@gmail.com">sufangsufiang15@gmail.com</a>
+                            <p>24 گھنٹوں میں جواب</p>
+                        </div>
+                    </div>
+                    
+                    <!-- WhatsApp -->
+                    <div class="contact-method whatsapp-contact">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>واٹس ایپ</h3>
+                            <a href="https://wa.me/923447814644" target="_blank">+92 344 781 4644</a>
+                            <p>براہ راست بات چیت</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Phone -->
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>فون نمبر</h3>
+                            <a href="tel:+923447814644">+92 344 781 4644</a>
+                            <p>صبح 10 بجے سے رات 10 بجے تک</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Business Hours -->
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>کاروباری اوقات</h3>
+                            <p>پیر سے جمعہ: صبح 10 بجے سے شام 6 بجے تک</p>
+                            <p>ہفتہ: صبح 11 بجے سے شام 4 بجے تک</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Response Time -->
+                <div class="response-time">
+                    <h3><i class="fas fa-bolt"></i> تیز جواب</h3>
+                    <p>
+                        <strong>واٹس ایپ پیغام:</strong> 1 گھنٹے کے اندر جواب<br>
+                        <strong>ای میل:</strong> 24 گھنٹوں کے اندر جواب<br>
+                        <strong>فون کال:</strong> فوری جواب
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="social-media">
+            <h3><i class="fas fa-share-alt"></i> سوشل میڈیا پر ہم سے جڑیں</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="social-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://wa.me/923447814644" class="social-icon" title="WhatsApp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2><i class="fas fa-question-circle"></i> اکثر پوچھے جانے والے سوالات</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>AI ٹولز کے بارے میں کیسے معلومات حاصل کریں؟</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>ہماری ویب سائٹ پر AI ٹولز کی مکمل معلومات موجود ہیں۔ اگر کوئی خاص ٹول نہ ملے تو ہمیں ای میل یا واٹس ایپ پر رابطہ کریں۔</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>کمائی کے مواقع کے بارے میں رہنمائی چاہیے؟</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>ہماری ویب سائٹ پر 10 اصلی کمائی کی ویب سائٹس کی مکمل تفصیلات موجود ہیں۔ مزید معلومات کے لیے ہم سے رابطہ کریں۔</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>ویب سائٹ میں مسئلہ ہے تو کیا کریں؟</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>کسی بھی ٹیکنیکل مسئلے کے لیے براہ راست واٹس ایپ پر رابطہ کریں۔ ہم جلد از جلد مسئلہ حل کرنے کی کوشش کریں گے۔</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>شراکت داری کے مواقع کے بارے میں؟</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>شراکت داری، گیسٹ پوسٹنگ، یا ایڈورٹائزنگ کے لیے براہ راست ای میل پر رابطہ کریں۔</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 AI Tools Hub. تمام حقوق محفوظ ہیں۔</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #64748b;">
+                AI Tools Hub - Best platform for AI tools and earning opportunities
+            </p>
+        </footer>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Back to Top functionality
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.style.display = 'flex';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+        
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Create WhatsApp message
+            const whatsappMessage = `*New Contact Form Submission*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Subject:* ${subject}%0A*Message:* ${message}`;
+            
+            // Create WhatsApp link
+            const whatsappLink = `https://wa.me/923447814644?text=${whatsappMessage}`;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:sufangsufiang15@gmail.com?subject=Contact Form: ${subject}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+            
+            // Show success message
+            alert('پیغام بھیجنے کے لیے آپ کا شکریہ! آپ کو واٹس ایپ پر ری ڈائریکٹ کیا جا رہا ہے۔');
+            
+            // Open WhatsApp
+            window.open(whatsappLink, '_blank');
+            
+            // Also open email (optional)
+            window.location.href = mailtoLink;
+            
+            // Reset form
+            this.reset();
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // WhatsApp Click Tracking
+        document.querySelectorAll('a[href*="whatsapp"]').forEach(link => {
+            link.addEventListener('click', () => {
+                console.log('WhatsApp link clicked');
+                // You can add analytics here
+            });
+        });
+
+        // Smooth loading animation
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s';
+            
+            setTimeout(function() {
+                document.body.style.opacity = '1';
+            }, 100);
+            
+            // Auto-open first FAQ
+            document.querySelector('.faq-item').classList.add('active');
+        });
+
+        // Copy email to clipboard
+        const emailElement = document.querySelector('a[href^="mailto"]');
+        emailElement.addEventListener('click', function(e) {
+            const email = this.textContent;
+            navigator.clipboard.writeText(email).then(() => {
+                const originalText = this.innerHTML;
+                this.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                setTimeout(() => {
+                    this.innerHTML = originalText;
+                }, 2000);
+            });
+        });
+
+        console.log("✅ Contact Us Page Loaded Successfully");
+        console.log("📧 Email: sufangsufiang15@gmail.com");
+        console.log("📱 WhatsApp: +92 344 781 4644");
+    </script>
+</body>
+</html>

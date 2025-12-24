@@ -1,0 +1,227 @@
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Large Screens (1200px and up) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 95%;
+    }
+    
+    .footer-content {
+        max-width: 95%;
+    }
+}
+
+/* Tablets (768px to 1199px) */
+@media (max-width: 1199px) {
+    .logo {
+        font-size: 2rem;
+    }
+    
+    .logo i {
+        font-size: 2.2rem;
+    }
+    
+    .tool-title {
+        font-size: 1.6rem;
+    }
+    
+    .earning-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small Tablets (576px to 767px) */
+@media (max-width: 767px) {
+    .main-header {
+        padding: 30px 20px;
+    }
+    
+    .logo {
+        font-size: 1.8rem;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    
+    .tool-section {
+        padding: 25px 20px;
+        margin: 20px 0;
+    }
+    
+    .tool-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .tool-number {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+    
+    .tool-title {
+        font-size: 1.5rem;
+    }
+    
+    .basic-info {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+    
+    .earning-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .visit-btn, .copy-btn {
+        width: 100%;
+    }
+    
+    .load-more-btn {
+        width: 90%;
+        padding: 15px 30px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .footer-title {
+        justify-content: center;
+    }
+    
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Mobile Phones (up to 575px) */
+@media (max-width: 575px) {
+    .logo {
+        font-size: 1.6rem;
+    }
+    
+    .subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .tool-section {
+        padding: 20px 15px;
+    }
+    
+    .features-grid {
+        gap: 20px;
+    }
+    
+    .pros-box, .cons-box {
+        padding: 20px;
+    }
+    
+    .box-title {
+        font-size: 1.2rem;
+    }
+    
+    .plan-price {
+        font-size: 2rem;
+    }
+    
+    .tip {
+        padding: 15px;
+    }
+    
+    .load-more-btn {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
+
+/* Very Small Phones (up to 375px) */
+@media (max-width: 375px) {
+    .logo {
+        font-size: 1.4rem;
+    }
+    
+    .tool-title {
+        font-size: 1.3rem;
+    }
+    
+    .tool-category {
+        font-size: 0.8rem;
+        padding: 5px 12px;
+    }
+    
+    .section-title {
+        font-size: 1.2rem;
+    }
+    
+    .earning-card {
+        padding: 20px 15px;
+    }
+}
+
+/* Landscape Orientation */
+@media (max-height: 600px) and (orientation: landscape) {
+    .main-header {
+        padding: 20px 0;
+    }
+    
+    .tool-section {
+        margin: 15px 0;
+        padding: 20px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .main-header {
+        background: white;
+        color: black;
+        border-bottom: 2px solid black;
+    }
+    
+    .tool-section {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        break-inside: avoid;
+        margin: 20px 0;
+    }
+    
+    .action-buttons,
+    .load-more-container,
+    .back-to-top {
+        display: none !important;
+    }
+    
+    .visit-btn, .copy-btn {
+        display: none;
+    }
+    
+    body {
+        background: white;
+    }
+    
+    .footer-link {
+        color: black;
+    }
+}

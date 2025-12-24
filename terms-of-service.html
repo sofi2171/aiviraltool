@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - AI Tools Hub</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', 'Noto Sans Arabic', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            line-height: 1.8;
+            direction: ltr;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(15, 23, 42, 0.9);
+            border-bottom: 2px solid #334155;
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            color: #60a5fa;
+            margin-bottom: 15px;
+        }
+        
+        .logo a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+        }
+        
+        /* Acceptance Banner */
+        .acceptance-banner {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(21, 128, 61, 0.1) 100%);
+            border: 2px solid #16a34a;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .acceptance-banner h2 {
+            color: #16a34a;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        /* Main Content */
+        .main-content {
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            border: 2px solid #334155;
+        }
+        
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+            padding: 25px;
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 15px;
+            border-left: 4px solid #60a5fa;
+        }
+        
+        .section h2 {
+            color: #60a5fa;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #334155;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section h2 i {
+            font-size: 1.5rem;
+        }
+        
+        .section h3 {
+            color: #94a3b8;
+            margin: 25px 0 15px 0;
+            font-size: 1.2rem;
+        }
+        
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .section ul {
+            margin: 15px 0 15px 30px;
+        }
+        
+        .section li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        .section li:before {
+            content: "•";
+            color: #60a5fa;
+            font-weight: bold;
+            position: absolute;
+            left: -20px;
+        }
+        
+        /* Important Box */
+        .important-box {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(251, 191, 36, 0.1) 100%);
+            border: 2px solid #f59e0b;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .important-box h3 {
+            color: #f59e0b;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        /* Warning Box */
+        .warning-box {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
+            border: 2px solid #dc2626;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .warning-box h3 {
+            color: #dc2626;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        /* Terms Table */
+        .terms-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(15, 23, 42, 0.8);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .terms-table th {
+            background: #1e40af;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        .terms-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #334155;
+        }
+        
+        .terms-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .terms-table tr:hover {
+            background: rgba(59, 130, 246, 0.1);
+        }
+        
+        /* Prohibited List Grid */
+        .prohibited-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .prohibited-card {
+            background: rgba(239, 68, 68, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #dc2626;
+        }
+        
+        .prohibited-card h4 {
+            color: #dc2626;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* Contact Box */
+        .contact-box {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
+            border: 2px solid #3b82f6;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .contact-box h3 {
+            color: #3b82f6;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .contact-info a {
+            color: #60a5fa;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .contact-info a:hover {
+            color: #3b82f6;
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 60px;
+            border-top: 2px solid #334155;
+            color: #94a3b8;
+            background: rgba(15, 23, 42, 0.9);
+        }
+        
+        .footer-links {
+            margin-top: 20px;
+        }
+        
+        .footer-links a {
+            color: #60a5fa;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 16px;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        
+        .footer-links a:hover {
+            background: #60a5fa;
+            color: white;
+            border-color: #60a5fa;
+        }
+        
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #60a5fa;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+        
+        .back-to-top:hover {
+            background: #3b82f6;
+            transform: translateY(-5px);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .main-content {
+                padding: 20px;
+            }
+            
+            .section {
+                padding: 15px;
+            }
+            
+            .terms-table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            .prohibited-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-links {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+            
+            .footer-links a {
+                width: 200px;
+                text-align: center;
+            }
+            
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-robot"></i>
+                    AI Tools Hub
+                </a>
+            </div>
+            <h1 style="color: #e2e8f0; margin-bottom: 10px;">Terms of Service</h1>
+            <p style="color: #94a3b8;">ہماری ویب سائٹ استعمال کرنے کی شرائط و ضوابط</p>
+        </header>
+
+        <!-- Acceptance Banner -->
+        <div class="acceptance-banner">
+            <h2><i class="fas fa-handshake"></i> شرائط کی قبولیت</h2>
+            <p>
+                <strong>ہماری ویب سائٹ استعمال کرکے، آپ ان شرائط و ضوابط سے اتفاق کرتے ہیں۔</strong><br>
+                اگر آپ ان شرائط سے اتفاق نہیں کرتے، براہ کرم ہماری ویب سائٹ استعمال نہ کریں۔
+            </p>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <!-- Introduction -->
+            <div class="section">
+                <h2><i class="fas fa-file-contract"></i> تعارف</h2>
+                <p>
+                    یہ Terms of Service ("شرائط") AI Tools Hub ("ہم"، "ہمارا"، "ہمیں") اور آپ کے درمیان معاہدہ ہیں۔ 
+                    یہ شرائط ہماری ویب سائٹ <a href="index.html" style="color: #60a5fa;">aitoolshub.com</a> اور متعلقہ خدمات 
+                    ("سروسز") کے استعمال کو کنٹرول کرتی ہیں۔
+                </p>
+                <p>
+                    براہ کرم ان شرائط کو غور سے پڑھیں۔ ہماری ویب سائٹ تک رسائی یا اس کا استعمال آپ کی ان شرائط کی 
+                    قبولیت کی نمائندگی کرتا ہے۔
+                </p>
+                
+                <div class="important-box">
+                    <h3><i class="fas fa-exclamation-circle"></i> اہم معلومات</h3>
+                    <p>
+                        <strong>ہم آپ کو مشورہ دیتے ہیں کہ آپ ان شرائط کو پرنٹ کر لیں یا اپنے ریکارڈ کے لیے محفوظ کر لیں۔</strong>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Definitions -->
+            <div class="section">
+                <h2><i class="fas fa-book"></i> تعریفیں</h2>
+                
+                <table class="terms-table">
+                    <thead>
+                        <tr>
+                            <th>اصطلاح</th>
+                            <th>تعریف</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ویب سائٹ</td>
+                            <td>aitoolshub.com اور اس کے تمام subdomains</td>
+                        </tr>
+                        <tr>
+                            <td>صارف</td>
+                            <td>ویب سائٹ تک رسائی رکھنے یا استعمال کرنے والا کوئی بھی شخص</td>
+                        </tr>
+                        <tr>
+                            <td>مواد</td>
+                            <td>ویب سائٹ پر موجود تمام متن، تصاویر، ویڈیوز، اور دیگر معلومات</td>
+                        </tr>
+                        <tr>
+                            <td>سروسز</td>
+                            <td>ویب سائٹ کے ذریعے پیش کردہ تمام خدمات اور فیچرز</td>
+                        </tr>
+                        <tr>
+                            <td>اکاؤنٹ</td>
+                            <td>رجسٹریشن کے بعد بننے والا صارف کا پروفائل</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Eligibility & Registration -->
+            <div class="section">
+                <h2><i class="fas fa-user-check"></i> اہلیت اور رجسٹریشن</h2>
+                
+                <h3>1. عمر کی ضرورت</h3>
+                <p>
+                    ہماری ویب سائٹ استعمال کرنے کے لیے آپ کی عمر کم از کم <strong>13 سال</strong> ہونی چاہیے۔ 
+                    13 سال سے کم عمر کے افراد ہماری ویب سائٹ استعمال نہیں کر سکتے۔
+                </p>
+                
+                <h3>2. اکاؤنٹ کی ذمہ داری</h3>
+                <p>اگر آپ اکاؤنٹ بناتے ہیں، تو آپ ذمہ دار ہیں:</p>
+                <ul>
+                    <li>اپنی معلومات کو درست اور مکمل رکھنے کے لیے</li>
+                    <li>اپنے پاس ورڈ کو محفوظ رکھنے کے لیے</li>
+                    <li>اپنے اکاؤنٹ میں ہونے والی تمام سرگرمیوں کے لیے</li>
+                    <li>کسی بھی غیر قانونی استعمال کی اطلاع دینے کے لیے</li>
+                </ul>
+                
+                <div class="warning-box">
+                    <h3><i class="fas fa-exclamation-triangle"></i> وارننگ</h3>
+                    <p>
+                        <strong>اپنا پاس ورڈ کسی کے ساتھ شیئر نہ کریں۔</strong> 
+                        اگر آپ کو شبہ ہے کہ آپ کا اکاؤنٹ کمپرومائز ہوا ہے، فوری طور پر ہم سے رابطہ کریں۔
+                    </p>
+                </div>
+            </div>
+
+            <!-- User Responsibilities -->
+            <div class="section">
+                <h2><i class="fas fa-user-cog"></i> صارف کی ذمہ داریاں</h2>
+                
+                <h3>1. قابل قبول استعمال</h3>
+                <p>آپ ہماری ویب سائٹ کو صرف قانونی مقاصد کے لیے استعمال کر سکتے ہیں:</p>
+                <ul>
+                    <li>AI ٹولز کے بارے میں معلومات حاصل کرنے کے لیے</li>
+                    <li>کمائی کے مواقع کے بارے میں تحقیق کرنے کے لیے</li>
+                    <li>تعلیمی مقاصد کے لیے</li>
+                    <li>ذاتی استعمال کے لیے</li>
+                </ul>
+                
+                <h3>2. ناقابل قبول استعمال</h3>
+                <p>آپ ہماری ویب سائٹ کو درج ذیل مقاصد کے لیے استعمال نہیں کر سکتے:</p>
+                <ul>
+                    <li>کسی بھی قسم کا غیر قانونی کام</li>
+                    <li>دوسروں کو ہراساں یا تنگ کرنا</li>
+                    <li>جعلسازی یا دھوکہ دہی</li>
+                    <li>ویب سائٹ کو نقصان پہنچانے کی کوشش</li>
+                    <li>سپیم یا میلویئر پھیلانا</li>
+                </ul>
+            </div>
+
+            <!-- Prohibited Activities -->
+            <div class="section">
+                <h2><i class="fas fa-ban"></i> ممنوعہ سرگرمیاں</h2>
+                
+                <div class="prohibited-grid">
+                    <div class="prohibited-card">
+                        <h4><i class="fas fa-hacker"></i> ہیکنگ</h4>
+                        <p>ویب سائٹ کی سیکورٹی کو توڑنے یا نقصان پہنچانے کی کوشش</p>
+                    </div>
+                    
+                    <div class="prohibited-card">
+                        <h4><i class="fas fa-robot"></i> آٹومیشن</h4>
+                        <p>بغیر اجازت بٹس، اسکرپٹس، یا آٹومیٹڈ ٹولز کا استعمال</p>
+                    </div>
+                    
+                    <div class="prohibited-card">
+                        <h4><i class="fas fa-ad"></i> اسپیمنگ</h4>
+                        <p>بے جا اشتہارات یا غیر درخواست شدہ مواد پوسٹ کرنا</p>
+                    </div>
+                    
+                    <div class="prohibited-card">
+                        <h4><i class="fas fa-copyright"></i> کاپی رائٹ</h4>
+                        <p>ہمارے یا دوسروں کے کاپی رائٹ شدہ مواد کی چوری</p>
+                    </div>
+                </div>
+                
+                <div class="warning-box">
+                    <h3><i class="fas fa-gavel"></i> قانونی کارروائی</h3>
+                    <p>
+                        <strong>کسی بھی ممنوعہ سرگرمی کی صورت میں ہم قانونی کارروائی کرنے کا حق محفوظ رکھتے ہیں۔</strong>
+                        اس میں پولیس کو اطلاع دینا، عدالت میں مقدمہ دائر کرنا، یا دیگر قانونی اقدامات شامل ہو سکتے ہیں۔
+                    </p>
+                </div>
+            </div>
+
+            <!-- Intellectual Property -->
+            <div class="section">
+                <h2><i class="fas fa-copyright"></i> دانشورانہ املاک</h2>
+                
+                <h3>1. ہمارے حقوق</h3>
+                <p>
+                    AI Tools Hub اور اس کے مواد (تصاویر، متن، لوگو، ڈیزائن، کوڈ) کے تمام حقوق 
+                    AI Tools Hub یا اس کے لائسنس دہندگان کے پاس محفوظ ہیں۔
+                </p>
+                
+                <h3>2. اجازت کے بغیر استعمال</h3>
+                <p>آپ درج ذیل کام نہیں کر سکتے:</p>
+                <ul>
+                    <li>ہمارا مواد کاپی یا ڈپلیکیٹ کرنا</li>
+                    <li>ہمارا مواد دوبارہ تقسیم کرنا</li>
+                    <li>ہمارے ٹریڈ مارک استعمال کرنا</li>
+                    <li>ہمارا مواد تجارتی مقاصد کے لیے استعمال کرنا</li>
+                </ul>
+                
+                <h3>3. اجازت کے ساتھ استعمال</h3>
+                <p>آپ درج ذیل کام کر سکتے ہیں:</p>
+                <ul>
+                    <li>ذاتی استعمال کے لیے پرنٹ کرنا</li>
+                    <li>حوالہ دیتے ہوئے اقتباسات استعمال کرنا</li>
+                    <li>سوشل میڈیا پر لنک شیئر کرنا</li>
+                </ul>
+                
+                <div class="important-box">
+                    <h3><i class="fas fa-balance-scale"></i> DMCA پالیسی</h3>
+                    <p>
+                        اگر آپ کو لگتا ہے کہ آپ کے کاپی رائٹ شدہ مواد کی خلاف ورزی ہوئی ہے، 
+                        براہ کرم ہمارے <a href="contact.html" style="color: #f59e0b;">DMCA ایجنٹ</a> سے رابطہ کریں۔
+                    </p>
+                </div>
+            </div>
+
+            <!-- User Generated Content -->
+            <div class="section">
+                <h2><i class="fas fa-comments"></i> صارف کا تخلیق کردہ مواد</h2>
+                
+                <h3>1. آپ کے حقوق</h3>
+                <p>آپ جو مواد پوسٹ کرتے ہیں، اس کے حقوق آپ کے پاس رہتے ہیں۔</p>
+                
+                <h3>2. لائسنس دیا گیا</h3>
+                <p>
+                    ہماری ویب سائٹ پر مواد پوسٹ کرکے، آپ ہمیں ایک non-exclusive, royalty-free, 
+                    worldwide license دیتے ہیں کہ ہم آپ کے مواد کو استعمال، ڈسپلے، اور تقسیم کر سکتے ہیں۔
+                </p>
+                
+                <h3>3. آپ کی ذمہ داری</h3>
+                <p>آپ یقینی بنائیں کہ آپ کا مواد:</p>
+                <ul>
+                    <li>آپ کا اپنا ہو یا آپ کے پاس استعمال کی اجازت ہو</li>
+                    <li>کسی کے حقوق کی خلاف ورزی نہ کرتا ہو</li>
+                    <li>غیر اخلاقی یا غیر قانونی نہ ہو</li>
+                    <li>دوسروں کو نقصان نہ پہنچاتا ہو</li>
+                </ul>
+            </div>
+
+            <!-- Third-Party Links & Services -->
+            <div class="section">
+                <h2><i class="fas fa-external-link-alt"></i> تیسری پارٹی لنکس اور خدمات</h2>
+                
+                <h3>1. بیرونی لنکس</h3>
+                <p>
+                    ہماری ویب سائٹ پر تیسری پارٹی ویب سائٹس کے لنکس ہو سکتے ہیں۔ 
+                    ہم ان ویب سائٹس کے مواد، پالیسیوں، یا طریقوں کے ذمہ دار نہیں ہیں۔
+                </p>
+                
+                <h3>2. تیسری پارٹی خدمات</h3>
+                <p>ہم درج ذیل تیسری پارٹی خدمات استعمال کرتے ہیں:</p>
+                
+                <table class="terms-table">
+                    <thead>
+                        <tr>
+                            <th>سروس</th>
+                            <th>مقصد</th>
+                            <th>ان کی شرائط</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Google AdSense</td>
+                            <td>اشتہارات دکھانے کے لیے</td>
+                            <td><a href="https://policies.google.com/terms" target="_blank" style="color: #60a5fa;">Google Terms</a></td>
+                        </tr>
+                        <tr>
+                            <td>Google Analytics</td>
+                            <td>ٹریفک تجزیہ کے لیے</td>
+                            <td><a href="https://marketingplatform.google.com/about/analytics/terms" target="_blank" style="color: #60a5fa;">Analytics Terms</a></td>
+                        </tr>
+                        <tr>
+                            <td>Social Media</td>
+                            <td>معلومات شیئر کرنے کے لیے</td>
+                            <td>Each platform's terms</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="important-box">
+                    <h3><i class="fas fa-link"></i> لنکس کا استعمال</h3>
+                    <p>
+                        <strong>تیسری پارٹی لنکس پر کلک کرتے وقت احتیاط برتیں۔</strong> 
+                        ہم ان سائٹس کی سیکورٹی یا مواد کی ضمانت نہیں دیتے۔
+                    </p>
+                </div>
+            </div>
+
+            <!-- Disclaimer of Warranties -->
+            <div class="section">
+                <h2><i class="fas fa-shield-alt"></i> ضمانتوں سے انکار</h2>
+                
+                <h3>1. "جیسا ہے" سروس</h3>
+                <p>
+                    ہماری ویب سائٹ اور خدمات "جیسا ہے" اور "جیسا دستیاب ہے" کی بنیاد پر فراہم کی جاتی ہیں۔ 
+                    ہم کوئی ضمانت یا وارنٹی نہیں دیتے کہ:
+                </p>
+                <ul>
+                    <li>سروس مسلسل دستیاب رہے گی</li>
+                    <li>سروس غلطیوں سے پاک ہوگی</li>
+                    <li>سروس آپ کی ضروریات پوری کرے گی</li>
+                    <li>سروس محفوظ ہوگی</li>
+                </ul>
+                
+                <h3>2. معلومات کی درستگی</h3>
+                <p>
+                    ہم معلومات کی درستگی کی ضمانت نہیں دیتے۔ AI ٹولز اور کمائی کے مواقع 
+                    کے بارے میں معلومات معلوماتی مقاصد کے لیے ہیں۔
+                </p>
+                
+                <div class="warning-box">
+                    <h3><i class="fas fa-exclamation-triangle"></i> اہم انتباہ</h3>
+                    <p>
+                        <strong>ہماری ویب سائٹ پر دی گئی کسی بھی مشورے پر عمل کرنے سے پہلے خود تحقیق کریں۔</strong>
+                        ہم کسی بھی نقصان یا نقصان کے ذمہ دار نہیں ہوں گے۔
+                    </p>
+                </div>
+            </div>
+
+            <!-- Limitation of Liability -->
+            <div class="section">
+                <h2><i class="fas fa-balance-scale-left"></i> ذمہ داری کی حد</h2>
+                
+                <h3>1. براہ راست نقصان</h3>
+                <p>
+                    کسی بھی صورت میں، AI Tools Hub یا اس کے اہلکار، ملازمین، یا ایجنٹس کسی بھی 
+                    براہ راست، بالواسطہ، ضمنی، خاص، یا نتیجے کے نقصان کے ذمہ دار نہیں ہوں گے۔
+                </p>
+                
+                <h3>2. نقصان کی اقسام</h3>
+                <p>یہ حد درج ذیل نقصانات پر لاگو ہوتی ہے:</p>
+                <ul>
+                    <li>منافع کا نقصان</li>
+                    <li>کاروبار کا نقصان</li>
+                    <li>ڈیٹا کا نقصان</li>
+                    <li>ساکھ کا نقصان</li>
+                    <li>کسی بھی قسم کا مالی نقصان</li>
+                </ul>
+                
+                <h3>3. زیادہ سے زیادہ ذمہ داری</h3>
+                <p>
+                    کسی بھی صورت میں ہماری کل ذمہ داری $100 سے زیادہ نہیں ہوگی، 
+                    چاہے ہمیں نقصان کے امکان کے بارے میں بتایا گیا ہو یا نہ ہو۔
+                </p>
+            </div>
+
+            <!-- Indemnification -->
+            <div class="section">
+                <h2><i class="fas fa-handshake"></i> معاوضہ</h2>
+                
+                <p>
+                    آپ AI Tools Hub، اس کے اہلکاروں، ملازمین، اور ایجنٹس کو ہر قسم کے دعووں، 
+                    ذمہ داریوں، نقصانات، اخراجات، اور وکیلانہ فیس سے بری الذمہ کرتے ہیں جو درج ذیل 
+                    کی وجہ سے پیدا ہوں:
+                </p>
+                
+                <ul>
+                    <li>آپ کے ویب سائٹ کے استعمال سے</li>
+                    <li>ان شرائط کی خلاف ورزی سے</li>
+                    <li>تیسری پارٹی کے حقوق کی خلاف ورزی سے</li>
+                    <li>کسی بھی غیر قانونی سرگرمی سے</li>
+                </ul>
+                
+                <div class="important-box">
+                    <h3><i class="fas fa-gavel"></i> قانونی دفاع</h3>
+                    <p>
+                        ہمیں کسی بھی ایسے دعوے کا دفاع کرنے کا حق حاصل ہوگا جس کے لیے آپ ہمیں 
+                        معاوضہ دینے کے پابند ہیں۔ آپ ہمارے دفاع میں تعاون کریں گے۔
+                    </p>
+                </div>
+            </div>
+
+            <!-- Termination -->
+            <div class="section">
+                <h2><i class="fas fa-power-off"></i> خاتمہ</h2>
+                
+                <h3>1. ہمارا حق</h3>
+                <p>ہم کسی بھی وقت، کسی بھی وجہ سے، بغیر نوٹس کے آپ کے استعمال کو ختم کر سکتے ہیں:</p>
+                <ul>
+                    <li>ان شرائط کی خلاف ورزی کرنے پر</li>
+                    <li>قانون کی خلاف ورزی کرنے پر</li>
+                    <li>ہماری ویب سائٹ کو نقصان پہنچانے پر</li>
+                    <li>کسی بھی وجہ سے جو ہم مناسب سمجھیں</li>
+                </ul>
+                
+                <h3>2. آپ کا حق</h3>
+                <p>آپ کسی بھی وقت ہماری ویب سائٹ کا استعمال بند کر سکتے ہیں۔</p>
+                
+                <h3>3. خاتمے کے اثرات</h3>
+                <p>خاتمے کے بعد:</p>
+                <ul>
+                    <li>آپ کا اکاؤنٹ بلاک ہو جائے گا</li>
+                    <li>آپ کا مواد حذف ہو سکتا ہے</li>
+                    <li>آپ کا ڈیٹا محفوظ کیا جا سکتا ہے</li>
+                    <li>یہ شرائط لاگو رہیں گی</li>
+                </ul>
+            </div>
+
+            <!-- Changes to Terms -->
+            <div class="section">
+                <h2><i class="fas fa-edit"></i> شرائط میں تبدیلیاں</h2>
+                
+                <h3>1. تبدیلی کا حق</h3>
+                <p>
+                    ہم کسی بھی وقت ان شرائط میں تبدیلی کر سکتے ہیں۔ ہم آپ کو تبدیلیوں کے بارے میں مطلع کریں گے:
+                </p>
+                <ul>
+                    <li>ویب سائٹ پر اپ ڈیٹ شدہ شرائط پوسٹ کرکے</li>
+                    <li>ای میل کے ذریعے (اگر آپ نے سبسکرائب کیا ہے)</li>
+                    <li>ویب سائٹ پر نوٹس ڈسپلے کرکے</li>
+                </ul>
+                
+                <h3>2. تبدیلیوں کا نفاذ</h3>
+                <p>
+                    تبدیلیوں کے بعد ویب سائٹ کا استعمال جاری رکھنے سے آپ اپ ڈیٹ شدہ شرائط سے اتفاق کرتے ہیں۔
+                </p>
+                
+                <div class="important-box">
+                    <h3><i class="fas fa-bell"></i> اہم نوٹ</h3>
+                    <p>
+                        <strong>ہماری ویب سائٹ استعمال کرتے رہنے سے پہلے شرائط کو چیک کرتے رہیں۔</strong>
+                        شرائط میں تبدیلیاں کسی بھی وقت ہو سکتی ہیں۔
+                    </p>
+                </div>
+            </div>
+
+            <!-- Governing Law -->
+            <div class="section">
+                <h2><i class="fas fa-globe"></i> حکمرانی کا قانون</h2>
+                
+                <h3>1. لاگو قانون</h3>
+                <p>
+                    یہ شرائط اور آپ کا ویب سائٹ کا استعمال [اپنا ملک/ریاست] کے قوانین کے تحت کنٹرول ہوں گے، 
+                    تنازعات کے حل کے اصولوں کو چھوڑ کر۔
+                </p>
+                
+                <h3>2. تنازعات کا حل</h3>
+                <p>
+                    کسی بھی تنازعے کی صورت میں، فریقین پہلے بات چیت کے ذریعے حل تلاش کریں گے۔ 
+                    اگر بات چیت ناکام ہو جائے، تو تنازعہ [اپنا شہر] کی عدالتوں میں حل کیا جائے گا۔
+                </p>
+                
+                <h3>3. آر بیٹریشن</h3>
+                <p>
+                    اگر بات چیت ناکام ہو جائے، تو تنازعہ آر بیٹریشن کے ذریعے حل کیا جائے گا۔ 
+                    آر بیٹریٹر کا فیصلہ حتمی اور دونوں فریقوں کے لیے پابند ہوگا۔
+                </p>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-box">
+                <h3><i class="fas fa-headset"></i> شرائط کے بارے میں سوالات</h3>
+                <p>Terms of Service سے متعلق کوئی سوال یا تشویش ہو تو براہ کرم ہم سے رابطہ کریں:</p>
+                <div class="contact-info">
+                    <a href="mailto:legal@aitoolshub.com">
+                        <i class="fas fa-envelope"></i> legal@aitoolshub.com
+                    </a>
+                    <a href="contact.html">
+                        <i class="fas fa-phone-alt"></i> Contact Form
+                    </a>
+                    <p style="margin-top: 15px;">
+                        <strong>پوسٹل ایڈریس:</strong><br>
+                        AI Tools Hub Legal Department<br>
+                        [اپنا پتہ یہاں درج کریں]
+                    </p>
+                </div>
+            </div>
+
+            <!-- Final Acceptance -->
+            <div class="acceptance-banner" style="margin-top: 40px;">
+                <h2><i class="fas fa-check-circle"></i> حتمی قبولیت</h2>
+                <p>
+                    <strong>ہماری ویب سائٹ تک رسائی یا اس کا استعمال آپ کی ان شرائط کی مکمل قبولیت کی نمائندگی کرتا ہے۔</strong><br>
+                    اگر آپ ان شرائط سے اتفاق نہیں کرتے، براہ کرم ہماری ویب سائٹ کا استعمال بند کر دیں۔
+                </p>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 AI Tools Hub. تمام حقوق محفوظ ہیں۔</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #64748b;">
+                یہ Terms of Service آخری بار 18 دسمبر، 2024 کو اپ ڈیٹ کی گئی تھی۔
+            </p>
+        </footer>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Back to Top functionality
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.style.display = 'flex';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+        
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Print functionality
+        const printButton = document.createElement('button');
+        printButton.innerHTML = '<i class="fas fa-print"></i> Print Terms';
+        printButton.style.cssText = `
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+        `;
+        
+        printButton.addEventListener('mouseenter', () => {
+            printButton.style.background = '#1d4ed8';
+        });
+        
+        printButton.addEventListener('mouseleave', () => {
+            printButton.style.background = '#3b82f6';
+        });
+        
+        printButton.addEventListener('click', () => {
+            window.print();
+        });
+        
+        document.body.appendChild(printButton);
+
+        // Table row hover effect
+        document.querySelectorAll('.terms-table tr').forEach(row => {
+            row.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = 'rgba(59, 130, 246, 0.2)';
+            });
+            
+            row.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = '';
+            });
+        });
+
+        // Acceptance checkbox for better UX
+        const acceptanceCheckbox = document.createElement('div');
+        acceptanceCheckbox.innerHTML = `
+            <div style="background: rgba(30, 41, 59, 0.9); padding: 15px; border-radius: 10px; margin: 20px 0; border: 1px solid #334155;">
+                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                    <input type="checkbox" id="acceptTerms" style="width: 18px; height: 18px;">
+                    <span>میں AI Tools Hub کی Terms of Service سے اتفاق کرتا/کرتی ہوں</span>
+                </label>
+            </div>
+        `;
+        
+        // Insert after first acceptance banner
+        document.querySelector('.acceptance-banner').insertAdjacentElement('afterend', acceptanceCheckbox);
+        
+        // Optional: Add functionality to the checkbox
+        document.getElementById('acceptTerms').addEventListener('change', function() {
+            if(this.checked) {
+                console.log("User accepted Terms of Service");
+                // You can add analytics or other functionality here
+            }
+        });
+
+        console.log("✅ Terms of Service Page Loaded Successfully");
+        
+        // Smooth loading animation
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s';
+            
+            setTimeout(function() {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>

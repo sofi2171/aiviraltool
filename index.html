@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1291348510465369"
+     crossorigin="anonymous"></script>
+<meta name="google-adsense-account" content="ca-pub-1291348510465369">
+<meta name="google-site-verification" content="676evzPxbRtrQFuzTY9so_aUVUd9H80MxzV0TkLSN64" />
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Top Free AI Tools 2025 | Image, Video & Content AI Tools</title>
+<meta name="description" content="Discover the top free AI tools to create images, videos, and content. Best AI software for designers, creators, and beginners.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', 'Noto Sans Arabic', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            color: #ffffff;
+            line-height: 1.8;
+            direction: ltr;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        /* Animated Background */
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: linear-gradient(45deg, #0f172a, #1e293b, #334155, #1e293b, #0f172a);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        /* Canvas Graphical Background */
+        .graphical-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* Floating Particles */
+        .particle {
+            position: fixed;
+            background: rgba(96, 165, 250, 0.1);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: float 20s infinite linear;
+            z-index: -1;
+        }
+        
+        .particle:nth-child(odd) {
+            background: rgba(59, 130, 246, 0.08);
+            animation-duration: 25s;
+        }
+        
+        .particle:nth-child(3n) {
+            background: rgba(147, 197, 253, 0.06);
+            animation-duration: 30s;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        /* Geometric Shapes */
+        .bg-shape {
+            position: fixed;
+            border-radius: 50%;
+            background: linear-gradient(45deg, rgba(96, 165, 250, 0.03), rgba(59, 130, 246, 0.05));
+            animation: pulse 8s ease-in-out infinite;
+            z-index: -1;
+        }
+        
+        .bg-shape:nth-child(2) {
+            animation-delay: -2s;
+            background: linear-gradient(45deg, rgba(147, 197, 253, 0.02), rgba(96, 165, 250, 0.04));
+        }
+        
+        .bg-shape:nth-child(3) {
+            animation-delay: -4s;
+            background: linear-gradient(45deg, rgba(59, 130, 246, 0.02), rgba(147, 197, 253, 0.03));
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1) rotate(0deg);
+                opacity: 0.3;
+            }
+            50% {
+                transform: scale(1.2) rotate(180deg);
+                opacity: 0.1;
+            }
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(15, 23, 42, 0.9);
+            border-bottom: 2px solid #334155;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        /* Hamburger Menu */
+        .hamburger {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+        
+        .hamburger span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: #60a5fa;
+            margin: 6px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+        
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+        
+        /* Slide Menu */
+        .slide-menu {
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: auto;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            transition: top 0.3s ease;
+            z-index: 1000;
+            padding: 60px 20px 20px;
+            border-bottom: 2px solid #334155;
+        }
+        
+        .slide-menu.active {
+            top: 0;
+        }
+        
+        .slide-menu h3 {
+            color: #60a5fa;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .slide-menu ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .slide-menu li {
+            margin-bottom: 0;
+        }
+        
+        .slide-menu a {
+            color: #f1f5f9;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            transition: all 0.3s;
+            white-space: nowrap;
+            font-size: 0.9rem;
+        }
+        
+        .slide-menu a:hover {
+            background: rgba(96, 165, 250, 0.1);
+            color: #60a5fa;
+        }
+        
+        /* Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+        }
+        
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            color: #60a5fa;
+            margin-bottom: 15px;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+        }
+        
+        .subtitle {
+            color: #f1f5f9;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Warning Box */
+        .warning-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border: 2px solid #f59e0b;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px auto;
+            max-width: 900px;
+            color: #92400e;
+        }
+        
+        .warning-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        /* Websites List */
+        .websites-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .website-card {
+            background: rgba(30, 41, 59, 0.8);
+            border: 2px solid #334155;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .website-card:hover {
+            transform: translateY(-5px);
+            border-color: #60a5fa;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .card-number {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #60a5fa;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .website-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .website-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 3px solid #475569;
+        }
+        
+        .website-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .website-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .website-info h2 {
+            color: #60a5fa;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .website-url {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        
+        .website-url a {
+            color: #3b82f6;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .website-url a:hover {
+            color: #60a5fa;
+            text-decoration: underline;
+        }
+        
+        /* Details Grid */
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+        
+        .detail-box {
+            background: rgba(15, 23, 42, 0.6);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #60a5fa;
+        }
+        
+        .detail-title {
+            color: #60a5fa;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        /* Verification Section */
+        .verification {
+            background: rgba(21, 128, 61, 0.1);
+            border: 2px solid #16a34a;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        
+        .verification-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            color: #16a34a;
+        }
+        
+        /* Real/Fake Analysis */
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .pros-box, .cons-box {
+            padding: 20px;
+            border-radius: 12px;
+        }
+        
+        .pros-box {
+            background: rgba(21, 128, 61, 0.1);
+            border: 2px solid #16a34a;
+        }
+        
+        .cons-box {
+            background: rgba(185, 28, 28, 0.1);
+            border: 2px solid #dc2626;
+        }
+        
+        .pros-title, .cons-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .pros-title {
+            color: #16a34a;
+        }
+        
+        .cons-title {
+            color: #dc2626;
+        }
+        
+        .pros-list, .cons-list {
+            list-style: none;
+        }
+        
+        .pros-list li, .cons-list li {
+            margin-bottom: 8px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .pros-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #16a34a;
+            font-weight: bold;
+        }
+        
+        .cons-list li:before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: #dc2626;
+            font-weight: bold;
+        }
+        
+        /* Rating */
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .stars {
+            color: #f59e0b;
+            font-size: 1.2rem;
+        }
+        
+        /* Visit Button */
+        .visit-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+        
+        .visit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 0 10px 0;
+            margin-top: 60px;
+            border-top: 2px solid #334155;
+            color: #f1f5f9;
+            background: rgba(15, 23, 42, 0.95);
+            position: relative;
+            z-index: 10;
+        }
+        
+        .footer-links {
+            margin-top: 20px;
+        }
+        
+        .footer-links a {
+            color: #60a5fa;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 16px;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        
+        .footer-links a:hover {
+            background: #60a5fa;
+            color: white;
+            border-color: #60a5fa;
+        }
+        
+        /* Responsive - Mobile First */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px 0;
+            }
+            
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+                padding: 0 15px;
+            }
+            
+            .hero-section {
+                padding: 40px 15px;
+                margin-bottom: 30px;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-description {
+                font-size: 1.1rem;
+            }
+            
+            .info-section {
+                padding: 25px 15px;
+                margin: 25px 0;
+            }
+            
+            .info-title {
+                font-size: 1.5rem;
+            }
+            
+            .stat-card {
+                padding: 25px 15px;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+            
+            .warning-box {
+                padding: 15px;
+                margin: 20px 15px;
+            }
+            
+            .warning-title {
+                font-size: 1.1rem;
+            }
+            
+            .hamburger {
+                top: 15px;
+                left: 15px;
+            }
+            
+            .slide-menu {
+                padding: 50px 15px 15px;
+            }
+            
+            .slide-menu ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .slide-menu a {
+                justify-content: center;
+                width: 100%;
+                max-width: 280px;
+            }
+            
+            .cta-button {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+            
+            .footer {
+                padding: 30px 15px 15px 15px;
+            }
+            
+            .footer-links {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+            
+            .footer-links a {
+                width: 200px;
+                text-align: center;
+            }
+        }
+        
+        /* Landing Page Styles */
+        .hero-section {
+            text-align: center;
+            padding: 60px 0;
+            background: rgba(15, 23, 42, 0.9);
+            border-radius: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .hero-title {
+            font-size: 3rem;
+            color: #60a5fa;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(96, 165, 250, 0.5);
+        }
+        
+        .hero-description {
+            font-size: 1.3rem;
+            color: #f1f5f9;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+        
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.4);
+        }
+        
+        .info-section {
+            background: rgba(30, 41, 59, 0.8);
+            border: 2px solid #334155;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+        }
+        
+        .info-title {
+            color: #60a5fa;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(96, 165, 250, 0.5);
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        @media (min-width: 768px) {
+            .info-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+        
+        .info-card {
+            background: rgba(15, 23, 42, 0.6);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid #60a5fa;
+            transition: all 0.3s;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .info-card-icon {
+            font-size: 2.5rem;
+            color: #60a5fa;
+            margin-bottom: 15px;
+        }
+        
+        .info-card-title {
+            color: #ffffff;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .info-card-text {
+            color: #f1f5f9;
+            line-height: 1.6;
+        }
+        
+        .stats-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        @media (min-width: 480px) {
+            .stats-section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .stats-section {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        .stat-card {
+            text-align: center;
+            background: rgba(30, 41, 59, 0.8);
+            padding: 30px 20px;
+            border-radius: 15px;
+            border: 2px solid #334155;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            color: #60a5fa;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            color: #f1f5f9;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+
+    <!-- Canvas for Live Graphical Background -->
+    <canvas id="graphical-bg" class="graphical-canvas"></canvas>
+
+    <!-- Background Shapes -->
+    <div class="bg-shape" style="width: 300px; height: 300px; top: 10%; left: 5%;"></div>
+    <div class="bg-shape" style="width: 200px; height: 200px; top: 60%; right: 10%;"></div>
+    <div class="bg-shape" style="width: 150px; height: 150px; bottom: 20%; left: 15%;"></div>
+    <!-- Hamburger Menu -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <!-- Slide Menu -->
+    <div class="slide-menu" id="slideMenu">
+        <h3><i class="fas fa-list"></i> Menu</h3>
+        <ul>
+            <li><a href="top-10-earning-websites.html"><i class="fas fa-money-check-alt"></i> Top 10 Free Earning Websites</a></li>
+            <li><a href="top-10-ai-imaging-tools.html"><i class="fas fa-robot"></i> Top 10 Free AI Imaging Tools</a></li>
+            <li><a href="top-10-ai-video-tools.html"><i class="fas fa-video"></i> Top 10 Free AI Video Tools</a></li>
+            <li><a href="top-10-ai-coding-tools.html"><i class="fas fa-code"></i> Top 10 Free AI Coding Tools</a></li>
+            <li><a href="top-10-ai-audio-tools.html"><i class="fas fa-music"></i> Top 10 Free AI Audio/Music Tools</a></li>
+            <li><a href="top-10-ai-marketing-tools.html"><i class="fas fa-chart-line"></i> Top 10 AI Marketing Tools</a></li>
+            <li><a href="top-10-ai-3d-game-tools.html"><i class="fas fa-gamepad"></i> Top 10 AI 3D & Game Dev Tools</a></li>
+        </ul>
+    </div>
+    
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1 class="hero-title">
+                <i class="fas fa-money-check-alt"></i>
+                Earn Money Online
+            </h1>
+            <p class="hero-description">
+                Discover the top 10 legitimate earning websites that millions of people use to make money online. 
+                From freelancing to remote jobs, find the perfect platform for your skills and start earning today.
+            </p>
+            <a href="top-10-earning-websites.html" class="cta-button">
+                <i class="fas fa-rocket"></i>
+                Explore Earning Websites
+            </a>
+        </section>
+        
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <div class="stat-card">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Verified Websites</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">180+</div>
+                <div class="stat-label">Countries Supported</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">$5-200+</div>
+                <div class="stat-label">Hourly Earnings</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Legitimate Platforms</div>
+            </div>
+        </div>
+        
+        <!-- About Website Section -->
+        <div class="info-section">
+            <h2 class="info-title">
+                <i class="fas fa-info-circle"></i>
+                About This Website
+            </h2>
+            <p style="text-align: center; color: #f1f5f9; font-size: 1.1rem; margin-bottom: 30px;">
+                This website was created to help people find legitimate online earning opportunities. 
+                We research and verify each platform to ensure you get accurate, up-to-date information.
+            </p>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="info-card-title">Thoroughly Researched</h3>
+                    <p class="info-card-text">
+                        Every website is carefully researched and verified. We check company backgrounds, 
+                        user reviews, payment methods, and legitimacy before including them in our list.
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="info-card-title">Scam-Free Guarantee</h3>
+                    <p class="info-card-text">
+                        All platforms listed are 100% legitimate. We only include websites with proven 
+                        track records, proper business registration, and positive user feedback.
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="info-card-title">Real Earning Potential</h3>
+                    <p class="info-card-text">
+                        Each website offers genuine earning opportunities. From $5/hour for beginners 
+                        to $200+/hour for experts, find platforms that match your skill level.
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="info-card-title">Global Opportunities</h3>
+                    <p class="info-card-text">
+                        Most platforms accept users from 180+ countries worldwide. Whether you're 
+                        from USA, Europe, Asia, or anywhere else, you can start earning online.
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="info-card-title">Flexible Working</h3>
+                    <p class="info-card-text">
+                        Work part-time, full-time, or whenever you want. All platforms offer flexible 
+                        schedules so you can earn money around your existing commitments.
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="info-card-title">All Skill Levels</h3>
+                    <p class="info-card-text">
+                        From data entry and surveys to advanced programming and design, we have 
+                        platforms for every skill level and background.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Why Choose Us Section -->
+        <div class="info-section">
+            <h2 class="info-title">
+                <i class="fas fa-star"></i>
+                Why Choose Our Guide?
+            </h2>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    <h3 class="info-card-title">Verified Information</h3>
+                    <p class="info-card-text">
+                        All earnings data, company information, and user requirements are verified 
+                        and updated regularly to ensure accuracy.
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="info-card-title">Real User Reviews</h3>
+                    <p class="info-card-text">
+                        Our analysis includes real user experiences, pros and cons, and honest 
+                        reviews from people actually using these platforms.
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="info-card-title">Beginner Friendly</h3>
+                    <p class="info-card-text">
+                        Clear explanations, step-by-step guidance, and tips for getting started 
+                        make it easy for anyone to begin earning online.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 Powered by Teach Sufian X</p>
+            <p style="margin-top: 15px; font-size: 0.9rem;">
+                Note: All information is provided after research. Earnings depend on your effort and skills.
+            </p>
+            
+            <!-- ✅ Footer Links Fixed -->
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="#website1">Back to Top</a>
+            </div>
+            
+            <div style="margin-top: 30px; padding: 20px 20px 0px 20px; background: rgba(30, 41, 59, 0.5); border-radius: 10px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <h3 style="color: #60a5fa; margin-bottom: 10px;">Need More Help?</h3>
+                <p style="font-size: 0.9rem;">
+                    Want more information or advice about any website? 
+                    <a href="contact.html" style="color: #60a5fa;">Contact Us</a>.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Simple JavaScript for smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add hover effects to cards
+        document.querySelectorAll('.website-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Add click effect to visit buttons
+        document.querySelectorAll('.visit-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                // Optional: Add analytics or confirmation
+                console.log("Visiting: " + this.href);
+            });
+        });
+
+        console.log("✅ 10 Earning Websites Page Loaded Successfully");
+        console.log("📊 Total Websites: 10");
+        
+        // Create floating particles
+        function createParticles() {
+            const particleCount = 15;
+            const body = document.body;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                // Random size between 2px and 8px
+                const size = Math.random() * 6 + 2;
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                
+                // Random horizontal position
+                particle.style.left = Math.random() * 100 + '%';
+                
+                // Random animation delay
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                
+                body.appendChild(particle);
+            }
+        }
+        
+        // Initialize particles when page loads
+        createParticles();
+        
+        // Show loading animation
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s';
+            
+            setTimeout(function() {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+        
+        // Hamburger Menu Toggle Function
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger');
+            const slideMenu = document.getElementById('slideMenu');
+            const overlay = document.getElementById('overlay');
+            
+            hamburger.classList.toggle('active');
+            slideMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+        
+        // Close menu when clicking on menu links
+        document.querySelectorAll('.slide-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                toggleMenu();
+            });
+        });
+
+        // Graphical Background Animation
+        function initGraphicalBackground() {
+            const canvas = document.getElementById('graphical-bg');
+            const ctx = canvas.getContext('2d');
+
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+
+            let particles = [];
+            const particleCount = 50;
+            const colors = ['rgba(96, 165, 250, 0.1)', 'rgba(59, 130, 246, 0.08)', 'rgba(147, 197, 253, 0.06)'];
+
+            for (let i = 0; i < particleCount; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    vx: (Math.random() - 0.5) * 0.5,
+                    vy: (Math.random() - 0.5) * 0.5,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    size: Math.random() * 3 + 1
+                });
+            }
+
+            function drawLines() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                particles.forEach(particle => {
+                    ctx.beginPath();
+                    ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+                    ctx.fillStyle = particle.color;
+                    ctx.fill();
+
+                    // Draw connections
+                    particles.forEach(other => {
+                        const dx = particle.x - other.x;
+                        const dy = particle.y - other.y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+
+                        if (distance < 150) {
+                            ctx.beginPath();
+                            ctx.moveTo(particle.x, particle.y);
+                            ctx.lineTo(other.x, other.y);
+                            ctx.strokeStyle = `rgba(96, 165, 250, ${0.1 * (1 - distance / 150)})`;
+                            ctx.lineWidth = 0.5;
+                            ctx.stroke();
+                        }
+                    });
+                });
+            }
+
+            function updateParticles() {
+                particles.forEach(particle => {
+                    particle.x += particle.vx;
+                    particle.y += particle.vy;
+
+                    if (particle.x < 0 || particle.x > canvas.width) particle.vx *= -1;
+                    if (particle.y < 0 || particle.y > canvas.height) particle.vy *= -1;
+                });
+            }
+
+            function animate() {
+                updateParticles();
+                drawLines();
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+        }
+
+        // Initialize graphical background
+        initGraphicalBackground();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Large Screens (1200px and up) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Tablets (768px to 1199px) */
+@media (max-width: 1199px) {
+    .tools-grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+    
+    .hero-stats {
+        gap: 20px;
+    }
+    
+    .stat {
+        min-width: 180px;
+    }
+}
+
+/* Small Tablets (576px to 767px) */
+@media (max-width: 767px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    /* Navbar */
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .nav-links {
+        width: 100%;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    
+    /* Hero */
+    .hero {
+        padding: 60px 0 40px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .stat {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+    
+    /* Tools Grid */
+    .tools-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .tool-card-header {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .tool-title {
+        flex: 1;
+        min-width: 200px;
+    }
+    
+    .tool-badge {
+        margin-left: 0;
+    }
+    
+    .tool-quick-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .tool-actions {
+        flex-direction: column;
+    }
+    
+    /* Comparison Table */
+    .comparison-table-container {
+        font-size: 0.9rem;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+        padding: 12px 10px;
+    }
+    
+    /* Tips Grid */
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .footer-links a {
+        justify-content: center;
+    }
+    
+    /* Section Titles */
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Mobile Phones (up to 575px) */
+@media (max-width: 575px) {
+    /* Hero */
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    /* Tool Cards */
+    .tool-card-header {
+        padding: 20px;
+    }
+    
+    .tool-card-body {
+        padding: 20px;
+    }
+    
+    .tool-quick-info {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pros-cons {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Comparison Table */
+    .comparison-table {
+        font-size: 0.85rem;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+        padding: 10px 8px;
+    }
+    
+    /* Back to Top */
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    
+    /* Tool Details */
+    .details-content {
+        padding: 0 20px 20px;
+    }
+}
+
+/* Very Small Phones (up to 375px) */
+@media (max-width: 375px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size: 1.6rem;
+    }
+    
+    .tool-card-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .tool-icon {
+        margin: 0 auto;
+    }
+    
+    .tool-title {
+        min-width: 100%;
+    }
+    
+    .tool-badge {
+        margin: 10px auto 0;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .tip-card {
+        padding: 20px;
+    }
+}
+
+/* Landscape Orientation */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        padding: 40px 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-stats {
+        margin-top: 30px;
+    }
+    
+    .stat {
+        padding: 15px;
+        min-width: 180px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .tool-actions,
+    .footer-newsletter,
+    .back-to-top {
+        display: none !important;
+    }
+    
+    .tool-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .comparison-table-container {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    body {
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+    
+    .btn-primary, .btn-secondary {
+        background: none;
+        color: #000;
+        border: 1px solid #000;
+        padding: 5px 10px;
+    }
+}

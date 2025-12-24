@@ -1,0 +1,317 @@
+/* responsive.css - Mobile Responsive Styles */
+
+/* Base Mobile-First Approach */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Prevent horizontal scroll */
+.container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Tablet Styles */
+@media (max-width: 992px) {
+    .logo {
+        font-size: 2rem;
+    }
+    
+    .pros-cons,
+    .earning-levels,
+    .tips ul {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .basic-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+    
+    .logo i {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+        padding: 0 5px;
+        text-align: center;
+    }
+    
+    .website-card {
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+    
+    .card-header {
+        padding: 12px;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+    
+    .website-number {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+        min-width: 30px;
+    }
+    
+    .website-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        min-width: 40px;
+    }
+    
+    .website-title {
+        flex: 1;
+        min-width: 0;
+    }
+    
+    .website-title h2 {
+        font-size: 1.2rem;
+        margin: 0;
+        word-break: break-word;
+    }
+    
+    .website-category {
+        font-size: 0.8rem;
+    }
+    
+    .website-details {
+        padding: 15px;
+    }
+    
+    .basic-info {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .info-item {
+        justify-content: flex-start;
+        text-align: left;
+        font-size: 0.85rem;
+    }
+    
+    .pros-cons {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .pros-cons h4,
+    .earning-info h4,
+    .tips h4 {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+    
+    .pros-cons li,
+    .tips li {
+        font-size: 0.8rem;
+        line-height: 1.4;
+        margin-bottom: 5px;
+    }
+    
+    .earning-levels {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .level {
+        padding: 8px 12px;
+        text-align: center;
+    }
+    
+    .level span {
+        font-size: 0.75rem;
+        display: block;
+        margin-bottom: 2px;
+    }
+    
+    .level strong {
+        font-size: 0.85rem;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .btn-visit,
+    .btn-info {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .main-footer {
+        padding: 20px 10px;
+        text-align: center;
+    }
+    
+    .main-footer p {
+        font-size: 0.85rem;
+        margin: 5px 0;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 8px;
+    }
+    
+    .logo {
+        font-size: 1.3rem;
+    }
+    
+    .logo i {
+        font-size: 1.8rem;
+    }
+    
+    .subtitle {
+        font-size: 0.85rem;
+    }
+    
+    .card-header {
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+    
+    .website-number,
+    .website-icon {
+        align-self: center;
+    }
+    
+    .website-title {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .website-title h2 {
+        font-size: 1.1rem;
+    }
+    
+    .website-category {
+        font-size: 0.75rem;
+    }
+    
+    .website-details {
+        padding: 12px;
+    }
+    
+    .info-item {
+        font-size: 0.8rem;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .pros-cons h4,
+    .earning-info h4,
+    .tips h4 {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+    
+    .pros-cons li,
+    .tips li {
+        font-size: 0.75rem;
+        padding-left: 15px;
+    }
+    
+    .level {
+        padding: 6px 8px;
+    }
+    
+    .level span {
+        font-size: 0.7rem;
+    }
+    
+    .level strong {
+        font-size: 0.8rem;
+    }
+    
+    .btn-visit,
+    .btn-info {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 5px;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .website-card {
+        margin: 0 0 15px 0;
+    }
+    
+    .card-header {
+        padding: 8px;
+    }
+    
+    .website-details {
+        padding: 10px;
+    }
+    
+    .pros-cons,
+    .earning-levels,
+    .tips ul {
+        gap: 10px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .action-buttons,
+    .btn-info {
+        display: none;
+    }
+    
+    .website-card {
+        break-inside: avoid;
+        border: 1px solid #ccc;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+}
